@@ -2,7 +2,7 @@ Gamehub.Routers.Router = Backbone.Router.extend({
   initialize: function (options) {
     // var searchView = new Gamehub.Views.SearchView();
     // $('#add-dropdown').append(searchView.render().$el);
-    this.$rootEl = options.$rootEl;
+    this.$root = options.$root;
   },
 
   routes: {
@@ -102,6 +102,6 @@ Gamehub.Routers.Router = Backbone.Router.extend({
   _swapView: function(view) {
     this._currentView && this._currentView.remove();
     this._currentView = view;
-    this.$rootEl.html(view.render().$el);
+    this.$root.html(view.render().$el);
   }
 })
