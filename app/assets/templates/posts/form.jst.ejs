@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="well well-sm">
+          <form>
+          <fieldset>
+            <legend class="text-center"><h1><%= post.isNew() ? 'New Post' : 'Edit Post' %></h1></legend>
+
+            <div class="form-group">
+              <label class="col-md-5 control-label" for="title">Title</label>
+              <div class="col-md-12">
+                <input id="title" name="title" type="text" value='<%= post.escape('title') %>' class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-5 control-label" for="tagsString">Tags</label>
+              <div class="col-md-12">
+                <input id="tagsString" name="tag_string" type="text" value='<%=tag_string %>' placeholder="sick, amaze" class="form-control">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-md-5 control-label" for="body">Body</label>
+              <div class="col-md-12">
+                <textarea class="form-control" id="body" name="body" rows="5"><%= post.escape('body') %></textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12 text-right filepicker"><br>
+                <input type="filepicker" data-fp-mimetype="video/*" name="file_url" value="<%= post.escape('file_url') %>">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-md-12 text-right"><br>
+                <button type="submit" class="btn btn-info btn-lg submit-post">Submit</button>
+                <a class="btn btn-primary btn-lg" href='#/blogs/<%= post.escape("blog_id") %>/posts/<%= post.id %>'>Back</a>
+              </div>
+            </div>
+          </fieldset>
+          </form>
+        </div>
+      </div>
+  </div>
+</div>

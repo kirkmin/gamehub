@@ -1,0 +1,42 @@
+<div class="container" background="background4.jpg">
+  <div class="row">
+      <div class="col-lg-12">
+          <h1 class="page-header" style="background-color:rgba(0, 0, 0, .75)"><%= blog.escape('title') %>
+              <small>Posts</small>
+          </h1>
+      </div>
+  </div>
+  <% posts.each(function (post) { %>
+    <div class="row" style="background-color:rgba(0, 0, 0, .75)">
+        <div class="col-md-5">
+          <% if (post.get('file_url')) { %>
+            <div class="media-left">
+              <a href="#/blogs/<%= blog.id %>/posts/<%= post.id %>">
+                <video autoplay class="vids" width="400" height="300" frameborder="0" muted>
+                  <source src="<%= post.get('file_url') %>" type="video/mp4">
+                </video>
+              </a>
+            </div>
+          <% } else { %>
+            <div class="media-left">
+              <a href="#/blogs/<%= blog.id %>/posts/<%= post.id %>">
+                <img src="<%= "assets/narwal.jpg" %>" width="400" height="300"/>
+              </a>
+            </div>
+          <% } %>
+        </div>
+        <div class="col-md-7">
+            <h3><a href="#blogs/<%= blog.id %>/posts/<%= post.id %>"><%= post.escape('title') %></a></h3>
+            <h4>Post #<%= post.id %></h4>
+            <p><%= post.escape('body') %></p>
+            <a class="btn btn-primary" href="#blogs/<%= blog.id %>/posts/<%= post.id %>">View Project <span class="glyphicon glyphicon-chevron-right"></span></a>
+            <button class="btn btn-danger delete-post" data-post-id="<%= post.id %>">Delete <span class="glyphicon glyphicon-trash"></span></button>
+            <a class="btn btn-info" href="#/blogs/<%= blog.id %>/posts/<%= post.id %>/edit">Edit <span class="glyphicon glyphicon-wrench"></span></a><br>
+        </div>
+    </div>
+    <hr>
+  <% }); %>
+  <div class="row" style="background-color:rgba(0, 0, 0, .75)">
+    <h2><a href="#blogs/<%= blog.id %>/posts/new">Create New Post!</a></h2>
+  </div>
+</div>

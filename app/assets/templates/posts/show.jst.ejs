@@ -1,0 +1,43 @@
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div style="background-color:rgba(0, 0, 0, .75)">
+                <h2 class="post-title">
+                  <br><center><u><%= post.escape('title') %></u></center><br>
+                </h2>
+              </div>
+              <% if (post.get("file_url")) { %>
+                <video autoplay width="750" height="563" controls>
+                  <source src="<%= post.get('file_url') %>" type="video/mp4">
+                  <source src="<%= post.get('file_url') %>" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+              <% } %>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" style="background-color:rgba(0, 0, 0, .75)">
+      <div class="post-preview">
+          <p class="post-subtitle">
+            <%= post.escape('body') %>
+          </p
+          <div>
+            <span class="badge badge-success"><%= post.get('updated_at') && post.get('updated_at').slice(0, 10) %></span>
+            <div class="pull-right">
+              <a href="#/tags">Tags  <span class="glyphicon glyphicon-tags"></span> : </a>
+              <% post.tags().each (function (tag) { %>
+                <span class="label badge badge-important"><a href="#/tags/<%= tag.id %>"><%= tag.escape('label') %></a></span>
+              <% }) %>
+            </div>
+          </div>
+          <div class="pull-right">
+          <br><a class="btn btn-info" href="#/blogs/<%= post.get("blog_id") %>/posts/<%= post.id %>/edit">Edit <span class="glyphicon glyphicon-wrench"></span></a>
+          <a class="btn btn-primary"href='#/blogs/<%= post.get("blog_id") %>'>Back</a><br><br>
+          </div>
+      </div>
+  </div>
+</div>

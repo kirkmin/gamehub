@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gamehub</title>
+  <%= stylesheet_link_tag    "application", media: "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <script>filepicker.setKey("ALViUWcu9QEKyyxH6y6lHz");</script>
+</head>
+<body class="fade-in bg-move" background="<%= image_url("background#{ 1 + rand(11)}.jpg") %>">
+
+  <%= render partial: "layouts/navbar" %>
+  <%= yield %>
+  <%= render partial: "layouts/footer" %>
+
+  </script>
+</body>
+</html>

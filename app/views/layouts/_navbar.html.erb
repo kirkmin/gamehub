@@ -1,0 +1,49 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/blogs/all">Gamehub</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">My Blogs</a></li>
+        <!-- <% if signed_in? %>
+        <li id='add-dropdown' class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Search By<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a class="filter-choice" href="#" data-id="user">User</a></li>
+            <li><a class="filter-choice" href="#" data-id="blog">Blog</a></li>
+            <li><a class="filter-choice" href="#" data-id="post">Post</a></li>
+            <li class="divider"></li>
+            <li><a class="filter-choice" href="#" data-id="tags">Tags</a></li>
+          </ul>
+        </li>
+        <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="<- Choose Search By">
+          </div>
+          <button type="submit" class="btn btn-default submit-search">Submit</button>
+        </form>
+        <% end %> -->
+      </ul>
+
+
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if signed_in? %>
+          <li><%= button_to "Sign out", session_url, method: :delete, class: "btn btn-primary navbar-btn" %></li>
+        <% else %>
+          <li><%= button_to "Log in", new_session_url, method: :get, class: "btn btn-primary navbar-btn" %></li>
+          <li><%= button_to "Sign up", new_user_url, method: :get, class: "btn btn-primary navbar-btn" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<% if flash[:errors] %>
+<div class="alert alert-warning alert-dismissible" role="alert">
+   <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+<%= flash[:errors].join("<br>").html_safe %>
+</div>
+<% end %>

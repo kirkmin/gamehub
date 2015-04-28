@@ -1,0 +1,5 @@
+<h1>I"M HEREERERERERERE</h1>
+
+<% tag.posts().models.forEach( function (post) { %>
+  <h3><a href="#blogs/<%= post.get('blog_id') %>/posts/<%= post.id %>"><%= post.escape('title') %></a></h3>
+<% }); %>

@@ -1,0 +1,12 @@
+<div class="post-preview" style="background-color:rgba(8,8,8, .75)"><br>
+  <h2 class="post-title">
+    <a href="#/blogs/<%= blog.id %>">
+      <u><%= blog.escape("title") %></u>
+    </a>
+  </h2>
+  <!-- delete delete button if not my blog -->
+  <button class="delete btn btn-danger" data-id="<%= blog.id %>">Delete <span class="glyphicon glyphicon-trash"></span></button>
+  <a class="btn btn-info" href="#/blogs/<%= blog.id %>/edit">Edit <span class="glyphicon glyphicon-wrench"></a>
+  <h5 class="post-meta"><%= blog.get('updated_at').slice(0, 10) %></h5><br>
+</div>
+<hr>
