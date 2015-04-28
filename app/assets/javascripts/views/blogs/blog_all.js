@@ -20,8 +20,8 @@ Gamehub.Views.BlogsAll = Backbone.CompositeView.extend({
   addIndexItem: function (blog) {
     var that = this;
     var view = new Gamehub.Views.BlogIndexItem({
-      model: blog
+      model: blog,
     });
-    that.addSubview('#blogs-all', view);
+    that.addSubview('#blogs-all', view, "all");
   },
 });

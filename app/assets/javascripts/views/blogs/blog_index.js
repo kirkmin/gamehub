@@ -33,9 +33,9 @@ Gamehub.Views.BlogsIndex = Backbone.CompositeView.extend({
   addIndexItem: function (blog) {
     var that = this;
     var view = new Gamehub.Views.BlogIndexItem({
-      model: blog
+      model: blog,
     });
-    that.addSubview('#blogs-index', view);
+    that.addSubview('#blogs-index', view, "index");
   },
 
   destroyBlog: function (event) {

@@ -37,7 +37,7 @@ module Api
     end
 
     def update
-      @blog = Blog.find(params[:id])
+      @blog = current_user.blogs.find(params[:id])
 
       if @blog.update(blog_params)
         render :show
