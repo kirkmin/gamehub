@@ -9,7 +9,7 @@ Rails.application.routes.draw do
     resources :blogs do
       resources :posts, only: [:index]
     end
-    resources :posts, except: [:index, :edit, :new]
+    resources :posts, except: [:index, :new]
     resources :tags, except: [:edit, :new]
   end
 end

@@ -2192,3 +2192,61 @@ DETAIL:  Failing row contains (6, null, 9, 2015-02-06 22:29:19.842338, 2015-02-0
 [04/27/15 20:09:23 -0700 Apps-Mac-mini-2.att.net (64907)] INFO : Doing deferred dependency-detection before Rack startup
 [04/27/15 20:09:47 -0700 Apps-Mac-mini-2.att.net (64907)] ERROR : Invalid license key, please contact support@newrelic.com
 [04/27/15 20:09:47 -0700 Apps-Mac-mini-2.att.net (64907)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.
+[04/27/15 21:19:25 -0700 Apps-Mac-mini-2.att.net (64907)] INFO : Starting Agent shutdown
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Starting the New Relic agent in "development" environment.
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] WARN : No configuration file found. Working directory = /Users/appacademy/desktop/gamehub-master
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] WARN : Looked in these locations (based on defaults): /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Environment: development
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : No known dispatcher detected.
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Application: development
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing ActiveJob instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing ActiveRecord 4 instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Net instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing deferred Rack instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Rack::Builder middleware instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Rails 3+ middleware instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Rails 4 Controller instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Rails 4 view instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Installing Rails 4 Error instrumentation
+[04/27/15 21:21:37 -0700 Apps-Mac-mini-2.att.net (65537)] INFO : Finished instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Starting the New Relic agent in "development" environment.
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] WARN : No configuration file found. Working directory = /Users/appacademy/desktop/gamehub-master
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] WARN : Looked in these locations (based on defaults): /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Environment: development
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : No known dispatcher detected.
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Application: development
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing ActiveJob instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing ActiveRecord 4 instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Net instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing deferred Rack instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Rack::Builder middleware instrumentation
+[04/27/15 21:22:12 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Rails 3+ middleware instrumentation
+[04/27/15 21:22:13 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Rails 4 Controller instrumentation
+[04/27/15 21:22:13 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Rails 4 view instrumentation
+[04/27/15 21:22:13 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Installing Rails 4 Error instrumentation
+[04/27/15 21:22:13 -0700 Apps-Mac-mini-2.att.net (65572)] INFO : Finished instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Starting the New Relic agent in "development" environment.
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] WARN : No configuration file found. Working directory = /Users/appacademy/desktop/gamehub-master
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] WARN : Looked in these locations (based on defaults): /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/desktop/gamehub-master/config/newrelic.yml, /Users/appacademy/desktop/gamehub-master/newrelic.yml, /Users/appacademy/.newrelic/newrelic.yml, /Users/appacademy/newrelic.yml
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Environment: development
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Dispatcher: webrick
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Application: development
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing ActiveJob instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing ActiveRecord 4 instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Net instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing deferred Rack instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Rack::Builder middleware instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Rails 3+ middleware instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Rails 4 Controller instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Rails 4 view instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Installing Rails 4 Error instrumentation
+[04/27/15 21:26:02 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Finished instrumentation
+[04/27/15 21:26:03 -0700 Apps-Mac-mini-2.att.net (65817)] INFO : Doing deferred dependency-detection before Rack startup
+[04/27/15 21:26:05 -0700 Apps-Mac-mini-2.att.net (65817)] ERROR : Invalid license key, please contact support@newrelic.com
+[04/27/15 21:26:05 -0700 Apps-Mac-mini-2.att.net (65817)] ERROR : Visit NewRelic.com to obtain a valid license key, or to upgrade your account.

@@ -13,8 +13,6 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require bootstrap
-//= require tweenLite
-//= require jquery.serializeJSON
 //= require jquery_ujs
 //= require underscore
 //= require backbone

@@ -4,7 +4,7 @@ Gamehub.Views.BlogShow = Backbone.View.extend({
   template: JST['blogs/show'],
 
   events: {
-    "click .delete-post": "deletePost",
+    'click .delete-post': 'deletePost',
     // "mouseenter .vids" : "videoPlay",
     // "mouseleave .vids" : "videoStop"
   },
@@ -35,7 +35,7 @@ Gamehub.Views.BlogShow = Backbone.View.extend({
 
   deletePost: function (event) {
     var $target = $(event.currentTarget);
-    var post = this.model.posts().getOrFetch($target.attr('data-post-id'));
-    post.destroy({success: console.log("SUCCESS")});
+    var post = this.model.posts().get($target.attr('data-post-id'));
+    post.destroy();
   }
 })

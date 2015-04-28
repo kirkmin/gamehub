@@ -1,7 +1,6 @@
 Gamehub.Collections.Posts = Backbone.Collection.extend({
-  url: 'api/posts',
-
   model: Gamehub.Models.Post,
+  url: 'api/posts',
 
   comparator: function (post) {
     return -post.get('updated_at')

@@ -6,7 +6,7 @@ Gamehub.Views.BlogsAll = Backbone.CompositeView.extend({
     this.collection.forEach( function (blog) {
       that.addIndexItem(blog)
     });
-    this.listenTo(this.collection, 'sync add change remove reset', this.render);
+    this.listenTo(this.collection, 'sync add change reset', this.render);
     this.listenTo(this.collection, 'add', this.addIndexItem);
   },
 
@@ -24,10 +24,4 @@ Gamehub.Views.BlogsAll = Backbone.CompositeView.extend({
     });
     that.addSubview('#blogs-all', view);
   },
-
-  destroyBlog: function (event) {
-    var $target = $(event.currentTarget);
-    var blog = this.collection.get($target.attr('data-id'));
-    blog.destroy();
-  }
 });

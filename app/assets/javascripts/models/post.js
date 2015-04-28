@@ -1,5 +1,5 @@
 Gamehub.Models.Post = Backbone.Model.extend({
-  urlRoot: 'api/posts',
+  urlRoot: '/api/posts',
 
   tags: function () {
     if (!this._tags) {

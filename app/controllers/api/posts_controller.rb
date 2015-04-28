@@ -27,9 +27,9 @@ module Api
 
     def index
       if (params[:all])
-        @posts = Posts.all
+        @posts = Post.all
       else
-        @posts = Posts.where(blog_id: params[:blog_id])
+        @posts = Post.where(blog_id: params[:blog_id])
       end
       render json: @posts
     end
